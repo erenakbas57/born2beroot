@@ -1,0 +1,109 @@
+● Sanal makine nasıl çalışır
+
+❖   donanımdan ayrılmış katmanda bir bilgisayarın sanal örneğini çalıştırırlar.
+❖   işletim sistemini bir yazılım yerine bilgisayarın yerel donanımında 
+çalıştıklarına inandırarak çalışır,
+❖   sanallaştırma ile bilgisayardan ödünç alınan CPU, bellek ve 
+depolama ile yazılım tabanlı sanal sürümünü oluşturur
+
+--------------------------------------------------------------------------------------------
+
+● Sanal makinelerin amacı
+
+❖   enerji tasarrufu
+❖   virüskü olduğunu düşündüğümüz dosyayı burada açabiliriz. sanal makineyi
+kullanan yazılım sanal ortamın dışına çıkamaz.
+❖   uygulama veya oyunları başka cihaza ihtiyaç olmadan test etme
+
+--------------------------------------------------------------------------------------------
+
+● Sudo neden gereklidir
+
+❖ Kullanıcı sisteme yönetici olarak bağlanmadan yönetici yetkisi gerektiren işlemleri
+yapmasını sağlar
+❖ kullanıcıya yönetici hesabı açmaya gerek kalmadan kendi şifresiyle izin verir
+❖ log kayıtı tutulup hangi kullanıcının ne işlem yaptığına bakılabilir
+
+--------------------------------------------------------------------------------------------
+
+● CentOS ve Debian arasındaki temel farklar.
+
+❖  Debian paket yöneticisi apt’dir 
+   Centos paket yöneticisi yum
+
+❖  CentOS'un yeni sürümleri uzun sürede yayımlanır ve kararlıdır
+   Debian Centos’a göre daha fazla güncelleme alıyor.
+
+❖  Centos kurumsal daha fazla tercih edilir. 
+   Debian ise bireysel daha çok tercih edilir.
+
+❖  Centos RedHat topluluğu tarafından desteklenir. 
+   Debian bireyler tarafından desteklenir.
+
+❖  Centos kendine ait bir siber güvenlik sistemiyle gelir adı da Selinux.
+
+❖  Debian birçok donanım mimarisini destekler
+   CentOS daha az mimari destekler
+
+❖  Centosun arayüzü karışıktır,
+   Debianın daha kolay.
+
+--------------------------------------------------------------------------------------------
+
+● Aptitude ve Apt arasındaki farklar.
+
+❖ Aptitude işlevsellik açısından apt den daha geniştir.
+❖ Aptitude arayüze sahipken apt sahip değildir
+❖ Aptitude ile paket yüklendiğinde tavsiye edilen paketleri de kurar. Apt, yüklenecek paketi 
+bağımlılıkları ile beraber yükler.
+❖ Aptitude güçlü filtreleme ve arama yeteneğine sahiptir.
+❖ Aptitude yapılan işlemlerin kaydını tutar
+❖ Aptitude yüksek level paket yöneticisidir, Apt, düşük level paket yöneticisi.
+
+--------------------------------------------------------------------------------------------
+
+● APPArmor nedir ?
+
+❖ Ubuntu'ya varsayılan olarak dahil edilen önemli bir güvenlik özelliğidir.
+❖ Sistem açılışında varsayılan olarak aktiftir.
+❖ sisteme zararı sınırlandırır veya yapılan işlemi durduran bir uygulamadır.
+❖ Örnek : yüklenen bir uygulamanın gereksiz izinleri almaması için güvenlik sağlar.
+
+--------------------------------------------------------------------------------------------
+
+● UFW nedir ?
+
+❖ Hem konsol hem grafiksel arayüz üzerinden port ve güvenlik duvarı işlemlerini 
+gerçekleştirmemizi sağlayan güvenlik duvarı aracı
+❖ Genel olarak SSH işlemleri içerisinde port açma/değiştirme/kapatma için faydalanırız.
+❖Linux tabanlı OS'lara güvenlik duvarı iptables dır. İptables daha komplike bir yapıdır. 
+UFW karmaşık değil güvenlik duvarı basit ve anlaşılır komutlarla güvenlik duvarını konfigüre etmemizi sağlar.
+❖iç ve dış trafiği denetleyen cihazdır. Bu duvar sayesinde bilgisayarımızdaki yazılımlar 
+bizim iznimiz dışında bilgi vermez.
+
+--------------------------------------------------------------------------------------------
+
+● SSH
+
+❖ bilgisayar ile sunucu arasındaki bağlantının oluşmasını sağlayan bir ağ protokolüdür.
+❖ bir bilgisayardan uzaktaki bir bilgisayara güvenli bağlantı kurmanın bir yoludur.
+❖ SSH bağlantısının portu varsayılan olarak 22’dir. Portu değiştirerek
+saldırganların 22 portundan sunucuya erişimini engelleyeceğiz.
+
+--------------------------------------------------------------------------------------------
+
+● LVM (mantıksal hacim yöneticisi)
+
+❖ birden fazla diski tek bir disk bölümü olarak kullanabilir
+❖ yeni disk veya disk bölümleri ilave edebilir
+❖ VM de ilk olarak tüm disk alanı sanal makinaya tahsis edilmez. İhtiyaç olduğunda ise 
+LVM sayesinde sanal makinaya ihtiyacı kadar alan yeniden tahsis edilir.
+
+--------------------------------------------------------------------------------------------
+
+● "Cron" nedir?
+
+❖ belirli işlerin belirli zamanlarda tekrarlanarak yapılmasını bir otomasyona bağlayarak 
+kolaylaştırır. Bir görevin ilerleyen zamanda tekrarlamak için komut verme işlemine cron denir.
+
+--------------------------------------------------------------------------------------------
